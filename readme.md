@@ -11,7 +11,7 @@ compatibilidade e performace.**
 - Domain driven design 
 - Hexagonal Architecture ou Ports and Adapters 
 
-#### Clean Architecture
+### Clean Architecture
 
 A `clean architucture` é a forma em que vamos estruturas as camadas do software dentro da aplicação. 
 O objetivo principal é eliminar o máximo de dependências dentro do código e ampliar o escopo de 
@@ -20,6 +20,21 @@ de uma forma simples, onde fatores externos depende de entidades internas porém
 depender de uma externa. 
 
 ![alt text](/images/CleanArchitecture.jpg)
+
+
+
+##### Entidades
+*As entidades encapsulam as regras de negócios de toda a empresa. Uma entidade pode ser um objeto com métodos, ou pode ser um conjunto de estruturas de dados e funções. Não importa, desde que as entidades possam ser usadas por muitos aplicativos diferentes na empresa.* - Robert C. Martin 
+
+#### Casos de uso 
+*O software nesta camada contém regras de negócios específicas do aplicativo . Ele encapsula e implementa todos os casos de uso do sistema. Esses casos de uso orquestram o fluxo de dados de e para as entidades e direcionam essas entidades a usar suas regras de negócios em toda a empresa para atingir as metas do caso de uso.* - Robert C. Martin 
+
+**Complemento:** Repare que nesta situação o caso de uso pode depender de uma entidade porém não pode acontecer vice 
+versa. 
+
+#### Adaptadores de interface 
+A camada de `adaptadores de interface` é um conjunto de `interface` (contratos). (continuar...)
+
 
 
 ### Caso de uso desta aplicação
@@ -35,3 +50,4 @@ dados obrigatórios para cada um é nome e CPF, para o veículo: ano, modelo, ma
 
 - [Entenda CLEAN ARCHITECTURE de uma vez por todas!](https://www.youtube.com/watch?v=HynTfTli4mw)
 - [The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [Descompmlicando a clean architecture](https://medium.com/luizalabs/descomplicando-a-clean-architecture-cf4dfc4a1ac6)
